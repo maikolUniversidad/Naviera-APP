@@ -1,0 +1,39 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "ReadRangeConnections`1_1",
+        "hash": "ReadRangeConnections`1_1|DataTable|XUHLUlFPhtsmnWhchJsl8Y8BykgCtceKawsqiJVxxc",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "ID",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Start Location ",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "End Location ",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "tipo de contenedor ",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "ReadRangeConnections`1_1|DataTable|zoVzUSdrxze3ywpR1ai7h6zbk1IwDpkLMqtqu162rDg",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    }
+  ]
+}

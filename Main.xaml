@@ -1,0 +1,1091 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="5238,7899" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.GSuite.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.GSuite.Sheets.Models</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>Studio.Generated.TypedDataTable1</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Naviera Robot APP" sap:VirtualizedContainerService.HintSize="5248,7834" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="CicloInfinito" />
+      <Variable x:TypeArguments="x:String" Name="Usuario_Hapag" />
+      <Variable x:TypeArguments="x:String" Name="Contraseña_Hapag" />
+      <Variable x:TypeArguments="x:String" Name="Usuario_Maersk" />
+      <Variable x:TypeArguments="x:String" Name="Contraseña_Maersk" />
+      <Variable x:TypeArguments="x:String" Name="Usuario_Cma" />
+      <Variable x:TypeArguments="x:String" Name="Contraseña_Cma" />
+      <Variable x:TypeArguments="x:String" Name="Usuario_One" />
+      <Variable x:TypeArguments="x:String" Name="Contraseña_One" />
+      <Variable x:TypeArguments="x:String" Name="Usuario_Evergreen" />
+      <Variable x:TypeArguments="x:String" Name="Contraseña_Evergreen" />
+      <Variable x:TypeArguments="x:String" Name="Usuario_Cma_Cgm" />
+      <Variable x:TypeArguments="x:String" Name="Contraseña_Cma_Cgm" />
+      <Variable x:TypeArguments="sd:DataTable1" Name="ConsultaSheet" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="TablaFiltrada" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="Tabla_MSC" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="Tabla_Hapag" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="Tabla_Maersk" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="Tabla_Cma" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="Tabla_ONE" />
+      <Variable x:TypeArguments="sd1:DataTable" Name="Tabla_Evergreen" />
+      <Variable x:TypeArguments="x:String" Name="Usuario_MSC" />
+      <Variable x:TypeArguments="x:String" Name="Contraseña_MSC" />
+      <Variable x:TypeArguments="x:String" Name="Link_Hapag_Lloyd" />
+      <Variable x:TypeArguments="x:String" Name="Link_Maersk" />
+      <Variable x:TypeArguments="x:String" Name="Link_Cma_Cgm" />
+      <Variable x:TypeArguments="x:String" Name="Link_ONE" />
+      <Variable x:TypeArguments="x:String" Name="Link_Evergreen" />
+      <Variable x:TypeArguments="x:String" Name="Link_MSC" />
+      <Variable x:TypeArguments="x:String" Name="Inicio_Envio_Quemado" />
+      <Variable x:TypeArguments="x:Boolean" Name="Bandera_Hapag" />
+      <Variable x:TypeArguments="x:Boolean" Name="Bandera_Login_Hapag" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Ciclo Infinito" sap:VirtualizedContainerService.HintSize="5186,7746" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1" MaxIterations="{x:Null}">
+      <ui:InterruptibleDoWhile.Body>
+        <Sequence DisplayName="Consulta Datos" sap:VirtualizedContainerService.HintSize="5152,7609" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="Entrega_Envio_Quemado" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Naviera DartaBase APP " BrowserItemId="1gz9zVZQu8EjczKWQtrA-necXnOQ7fUidLOarBfQZfA8" ConnectionId="b27b0de1-3252-441c-b30e-23dde0ebc68b" ContinueOnError="{x:Null}" DisplayName="Leer rango" HasHeaders="True" sap:VirtualizedContainerService.HintSize="5090,288" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" ManualEntrySpreadsheetId="{x:Null}" Range="Solicitud" RangeInformation="{x:Null}" RangeNameOrAddress="{x:Null}" RangeSheetName="{x:Null}" ReadAs="Values" SheetName="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+            <uga:ReadRangeConnections.ColumnNames>
+              <x:Array Type="x:String">
+                <x:String>ID</x:String>
+                <x:String xml:space="preserve">Start Location </x:String>
+                <x:String xml:space="preserve">End Location </x:String>
+                <x:String xml:space="preserve">tipo de contenedor </x:String>
+              </x:Array>
+            </uga:ReadRangeConnections.ColumnNames>
+            <uga:ReadRangeConnections.FileIdBackup>
+              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="Browse">
+                <usau:BackupSlot.BackupValues>
+                  <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                </usau:BackupSlot.BackupValues>
+              </usau:BackupSlot>
+            </uga:ReadRangeConnections.FileIdBackup>
+            <uga:ReadRangeConnections.RangeMetadata>
+              <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
+            </uga:ReadRangeConnections.RangeMetadata>
+            <uga:ReadRangeConnections.Result>
+              <OutArgument x:TypeArguments="sd:DataTable1">
+                <VisualBasicReference x:TypeArguments="sd:DataTable1" ExpressionText="ConsultaSheet">
+                  <VisualBasicReference.Result>
+                    <OutArgument x:TypeArguments="Location(sd:DataTable1)" />
+                  </VisualBasicReference.Result>
+                </VisualBasicReference>
+              </OutArgument>
+            </uga:ReadRangeConnections.Result>
+          </uga:ReadRangeConnections>
+          <Sequence DisplayName="Filtros Trablas" sap:VirtualizedContainerService.HintSize="5090,1462" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:FilterDataTable DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.DataTable>
+                <InArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="ConsultaSheet">
+                    <VisualBasicValue.Result>
+                      <OutArgument x:TypeArguments="sd1:DataTable" />
+                    </VisualBasicValue.Result>
+                  </VisualBasicValue>
+                </InArgument>
+              </ui:FilterDataTable.DataTable>
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Estado Consulta&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Completada&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.OutputDataTable>
+                <OutArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicReference x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                    <VisualBasicReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd1:DataTable)" />
+                    </VisualBasicReference.Result>
+                  </VisualBasicReference>
+                </OutArgument>
+              </ui:FilterDataTable.OutputDataTable>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:FilterDataTable DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.DataTable>
+                <InArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                    <VisualBasicValue.Result>
+                      <OutArgument x:TypeArguments="sd1:DataTable" />
+                    </VisualBasicValue.Result>
+                  </VisualBasicValue>
+                </InArgument>
+              </ui:FilterDataTable.DataTable>
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Hapag_Lloyd&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Completada&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.OutputDataTable>
+                <OutArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicReference x:TypeArguments="sd1:DataTable" ExpressionText="Tabla_Hapag">
+                    <VisualBasicReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd1:DataTable)" />
+                    </VisualBasicReference.Result>
+                  </VisualBasicReference>
+                </OutArgument>
+              </ui:FilterDataTable.OutputDataTable>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:FilterDataTable DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.DataTable>
+                <InArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                    <VisualBasicValue.Result>
+                      <OutArgument x:TypeArguments="sd1:DataTable" />
+                    </VisualBasicValue.Result>
+                  </VisualBasicValue>
+                </InArgument>
+              </ui:FilterDataTable.DataTable>
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Maersk&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Completada&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.OutputDataTable>
+                <OutArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicReference x:TypeArguments="sd1:DataTable" ExpressionText="Tabla_Maersk">
+                    <VisualBasicReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd1:DataTable)" />
+                    </VisualBasicReference.Result>
+                  </VisualBasicReference>
+                </OutArgument>
+              </ui:FilterDataTable.OutputDataTable>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:FilterDataTable DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.DataTable>
+                <InArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                    <VisualBasicValue.Result>
+                      <OutArgument x:TypeArguments="sd1:DataTable" />
+                    </VisualBasicValue.Result>
+                  </VisualBasicValue>
+                </InArgument>
+              </ui:FilterDataTable.DataTable>
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Cma_Cgm &quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Completada&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.OutputDataTable>
+                <OutArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicReference x:TypeArguments="sd1:DataTable" ExpressionText="Tabla_Cma">
+                    <VisualBasicReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd1:DataTable)" />
+                    </VisualBasicReference.Result>
+                  </VisualBasicReference>
+                </OutArgument>
+              </ui:FilterDataTable.OutputDataTable>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:FilterDataTable DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_5" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.DataTable>
+                <InArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                    <VisualBasicValue.Result>
+                      <OutArgument x:TypeArguments="sd1:DataTable" />
+                    </VisualBasicValue.Result>
+                  </VisualBasicValue>
+                </InArgument>
+              </ui:FilterDataTable.DataTable>
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;ONE &quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Completada&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.OutputDataTable>
+                <OutArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicReference x:TypeArguments="sd1:DataTable" ExpressionText="Tabla_ONE">
+                    <VisualBasicReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd1:DataTable)" />
+                    </VisualBasicReference.Result>
+                  </VisualBasicReference>
+                </OutArgument>
+              </ui:FilterDataTable.OutputDataTable>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:FilterDataTable DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.DataTable>
+                <InArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                    <VisualBasicValue.Result>
+                      <OutArgument x:TypeArguments="sd1:DataTable" />
+                    </VisualBasicValue.Result>
+                  </VisualBasicValue>
+                </InArgument>
+              </ui:FilterDataTable.DataTable>
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;ONE&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Completada&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.OutputDataTable>
+                <OutArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicReference x:TypeArguments="sd1:DataTable" ExpressionText="Tabla_Evergreen">
+                    <VisualBasicReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd1:DataTable)" />
+                    </VisualBasicReference.Result>
+                  </VisualBasicReference>
+                </OutArgument>
+              </ui:FilterDataTable.OutputDataTable>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:FilterDataTable DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,184" sap2010:WorkflowViewState.IdRef="FilterDataTable_7" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.DataTable>
+                <InArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                    <VisualBasicValue.Result>
+                      <OutArgument x:TypeArguments="sd1:DataTable" />
+                    </VisualBasicValue.Result>
+                  </VisualBasicValue>
+                </InArgument>
+              </ui:FilterDataTable.DataTable>
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;MSC&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">
+                        <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;Completada&quot;">
+                          <VisualBasicValue.Result>
+                            <OutArgument x:TypeArguments="x:String" />
+                          </VisualBasicValue.Result>
+                        </VisualBasicValue>
+                      </InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.OutputDataTable>
+                <OutArgument x:TypeArguments="sd1:DataTable">
+                  <VisualBasicReference x:TypeArguments="sd1:DataTable" ExpressionText="Tabla_MSC">
+                    <VisualBasicReference.Result>
+                      <OutArgument x:TypeArguments="Location(sd1:DataTable)" />
+                    </VisualBasicReference.Result>
+                  </VisualBasicReference>
+                </OutArgument>
+              </ui:FilterDataTable.OutputDataTable>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+          </Sequence>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="Procesamiento de Consultas por Fila" sap:VirtualizedContainerService.HintSize="5090,5774" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="{x:Null}" Values="{x:Null}">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd1:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="Fila Actual" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="5056,5587" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Parallel DisplayName="Paralelo" sap:VirtualizedContainerService.HintSize="4994,5502" sap2010:WorkflowViewState.IdRef="Parallel_1">
+                    <Sequence DisplayName="Hapag Lloyd" sap:VirtualizedContainerService.HintSize="2340,5432" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="2278,114" sap2010:WorkflowViewState.IdRef="Assign_1" />
+                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Hacer mientras" sap:VirtualizedContainerService.HintSize="2278,5190" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                        <ui:InterruptibleDoWhile.Body>
+                          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="2244,5053" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Utilizar Navegador Edge: Login to your user account | Hapag-Lloyd" sap:VirtualizedContainerService.HintSize="2182,4968" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="2148,4688" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Please Log in'" sap:VirtualizedContainerService.HintSize="2086,1251" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="450,1002" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'E-mail Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Usuario_Hapag]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvElementArea="1066, 566, 389, 42" CvType="InputBox" DesignTimeRectangle="1067, 568, 388, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='signInName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='signInName' tag='INPUT' type='text' class='' placeholder='E-mail Address' aaname='               E-mail Address             ' /&gt;" Guid="3bfa14cc-4287-483f-8337-52f579c8fd6e" InformativeScreenshot="aa1bf8d557aabdd856fc33a001d89c65.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvTextArea="1065, 547, 106, 14" CvTextArgument="E-mail Address" CvType="Text" DesignTimeRectangle="1067, 548, 388, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='               E-mail Address             ' check:innerText='E-mail Address' /&gt;" Guid="e3123762-417c-4352-848f-e5c311bf6e3d" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.VerifyOptions>
+                                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              </uix:VerifyExecutionTypeIntoOptions>
+                                            </uix:NTypeInto.VerifyOptions>
+                                          </uix:NTypeInto>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="TAEWOONG2021*" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvElementArea="1066, 648, 390, 42" CvType="InputBox" DesignTimeRectangle="1067, 649, 388, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='' placeholder='Password' aaname='Password' /&gt;" Guid="386bb282-69b9-4ae8-bf43-bf5551d44b55" InformativeScreenshot="c2a1bc7b857a123c18900b0eae1a8697.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvTextArea="1066, 629, 68, 13" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="1067, 629, 67, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='' check:innerText='Password' /&gt;" Guid="2d154ab2-8100-45bd-aad7-7bf7f89ed194" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.VerifyOptions>
+                                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              </uix:VerifyExecutionTypeIntoOptions>
+                                            </uix:NTypeInto.VerifyOptions>
+                                          </uix:NTypeInto>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Log in'" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvElementArea="1065, 719, 390, 51" CvTextArea="1235, 736, 50, 20" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="1067, 721, 388, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='next' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='submit' class='' aaname='Log in' check:innerText='Log in' /&gt;" Guid="1a2809b3-6d43-469c-8cfd-97deb22f041e" InformativeScreenshot="0ce9e5d90b699a4c9d2b5de3cecc2898.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvTextArea="1203, 805, 114, 14" CvTextArgument="Not yet registered?" CvType="Text" DesignTimeRectangle="1204, 805, 113, 13" ElementType="Text" FullSelectorArgument="&lt;webctrl id='createAccount' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='createAccount' tag='A' type='' class='' aaname='Not yet registered?' check:innerText='Not yet registered?' /&gt;" Guid="85b54061-e6b4-4e7a-88e6-488d0eb151c3" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <Delay DisplayName="Retraso" Duration="00:00:15" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvTextArea="1065, 491, 229, 32" CvTextArgument="Please Log in" CvType="Text" DesignTimeRectangle="1067, 486, 388, 44" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='             Please Log in           ' check:innerText='Please Log in' /&gt;" Guid="d03f4148-c1cb-4c9a-af90-303fd12f66d9" InformativeScreenshot="f16013f0d6f9dde41751a8611e7a9a61.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvTextArea="1065, 547, 106, 14" CvTextArgument="E-mail Address" CvType="Text" DesignTimeRectangle="1066, 547, 105, 14" ElementType="Text" Guid="0156d2d7-9376-4607-bab3-9224c0361fdc" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                    </uix:NCheckState>
+                                    <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Inicio'" sap:VirtualizedContainerService.HintSize="2086,3350" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1582,3108" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cotizar'" sap:VirtualizedContainerService.HintSize="1520,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes" CVScreenId="0fb29b79-62ea-4ccf-b2b2-3fe1bcefe755" CvTextArea="63, 308, 54, 14" CvTextArgument="Cotizar" CvType="Text" DesignTimeRectangle="12, 292, 256, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aria-role='button' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aria-role='button' shadowhostid='' tag='DIV' type='' class='q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable' aaname='' check:innerText='Cotizar' /&gt;" Guid="51699100-a5c7-4657-9c04-c35d0134e5f0" InformativeScreenshot="17e00f5766e8ab242961ed8ab7b9b57b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="0fb29b79-62ea-4ccf-b2b2-3fe1bcefe755" CvElementArea="16, 196, 99, 37" CvTextArea="48, 208, 41, 14" CvTextArgument="Inicio" CvType="Button" DesignTimeRectangle="34, 188, 71, 56" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl class='second-header__link' shadowhostid='' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl class='second-header__link' shadowhostid='' tag='A' type='' aaname=' Inicio ' check:innerText='Inicio' /&gt;" Guid="5503ef1b-869f-4f44-9dae-3a5216c4ac8e" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Nueva Cotización'" sap:VirtualizedContainerService.HintSize="1520,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes" CVScreenId="efcb2fa9-2e3e-4e72-9129-fd47de893c76" CvTextArea="76, 356, 119, 14" CvTextArgument="Nueva Cotizacion" CvType="Text" DesignTimeRectangle="50, 340, 153, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aaname=' Nueva Cotización ' shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aaname=' Nueva Cotización ' shadowhostid='' tag='SPAN' type='' class='base-menu-items__link-text base-menu-items__link-text--active' check:innerText='Nueva Cotización' /&gt;" Guid="50d9078f-b1f2-4391-9fb0-77892a8f7a7c" InformativeScreenshot="99f373d35e3b2f65e012c4898e2d2030.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="efcb2fa9-2e3e-4e72-9129-fd47de893c76" CvTextArea="64, 308, 53, 14" CvTextArgument="Cotizar" CvType="Text" DesignTimeRectangle="12, 292, 256, 48" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aria-role='button' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aria-role='button' shadowhostid='' tag='DIV' type='' class='q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable' aaname='' check:innerText='Cotizar' /&gt;" Guid="8559fa61-3554-4220-aeee-e8b9cc5316ee" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Request'" sap:VirtualizedContainerService.HintSize="1520,2568" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                            <uix:NCheckState.IfExists>
+                                              <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1016,2326" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                                <Sequence.Variables>
+                                                  <Variable x:TypeArguments="x:Boolean" Name="Bandera_Login_Maersk" />
+                                                  <Variable x:TypeArguments="x:Boolean" Name="Bandera_Login_Cma" />
+                                                  <Variable x:TypeArguments="x:Boolean" Name="Bandera_Login_ONE" />
+                                                  <Variable x:TypeArguments="x:Boolean" Name="Bandera_Evergreen" />
+                                                  <Variable x:TypeArguments="x:Boolean" Name="Bandera_MSC" />
+                                                </Sequence.Variables>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Start Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Inicio_Envio_Quemado]" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="364, 585, 95, 13" CvTextArgument="Start Location" CvType="Text" DesignTimeRectangle="317, 572, 320, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='request' tabindex='-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='request' tabindex='-1' tag='DIV' type='' class='q-field__control relative-position row no-wrap' aaname='' /&gt;" Guid="cc5ecfaf-b7fc-4081-9e08-e78df8bd8cfe" InformativeScreenshot="7289839452b0e1f4a5acbc0be76e6b4f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <uix:Target CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="316, 552, 96, 13" CvTextArgument="Start Location" CvType="Text" DesignTimeRectangle="317, 549, 320, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Start Location' parentid='request' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Start Location' parentid='request' tag='DIV' type='' class='q-field__label no-pointer-events absolute ellipsis' check:innerText='Start Location' /&gt;" Guid="782c672f-944f-4511-8f32-87ddf181030f" SearchSteps="FuzzySelector" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="954,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="954,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
+                                                  <uix:NKeyboardShortcuts.VerifyOptions>
+                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionOptions.Retry>
+                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                    </uix:VerifyExecutionOptions>
+                                                  </uix:NKeyboardShortcuts.VerifyOptions>
+                                                </uix:NKeyboardShortcuts>
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'End Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Entrega_Envio_Quemado]" Version="V3">
+                                                  <uix:NTypeInto.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="700, 585, 87, 13" CvTextArgument="End Location" CvType="Text" DesignTimeRectangle="653, 572, 320, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' parentid='request' tabindex='-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='request' tabindex='-1' tag='DIV' class='q-field__control relative-position row no-wrap' aaname='' /&gt;" Guid="23505534-8bf4-44f5-954a-b7b955929870" InformativeScreenshot="cac6cd5b9824945b95763be15611601e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <uix:Target CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="652, 552, 88, 13" CvTextArgument="End Location" CvType="Text" DesignTimeRectangle="653, 549, 320, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='End Location' parentid='request' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='End Location' parentid='request' tag='DIV' type='' class='q-field__label no-pointer-events absolute ellipsis' check:innerText='End Location' /&gt;" Guid="b267e166-3d65-4473-b9d0-71b9a9638fbf" SearchSteps="FuzzySelector" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NTypeInto.Target>
+                                                  <uix:NTypeInto.VerifyOptions>
+                                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    </uix:VerifyExecutionTypeIntoOptions>
+                                                  </uix:NTypeInto.VerifyOptions>
+                                                </uix:NTypeInto>
+                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="954,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="954,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
+                                                  <uix:NKeyboardShortcuts.VerifyOptions>
+                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionOptions.Retry>
+                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                    </uix:VerifyExecutionOptions>
+                                                  </uix:NKeyboardShortcuts.VerifyOptions>
+                                                </uix:NKeyboardShortcuts>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I accept'" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvElementArea="315, 1198, 21, 20" CvType="CheckBox" DesignTimeRectangle="319, 1202, 14, 14" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' parentid='request' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='request' tag='svg' class='q-checkbox__svg fit absolute-full' aaname='' /&gt;" Guid="cd32084a-5318-42a8-ac44-0328053201a8" InformativeScreenshot="433d7280e861ccef97b2022a1c2700ef.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <uix:Target CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="345, 1201, 231, 14" CvTextArgument="I accept the Terms and Conditions" CvType="Text" DesignTimeRectangle="344, 1200, 231, 18" FullSelectorArgument="&lt;webctrl aaname='I accept the  ' parentid='request' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='I accept the  ' parentid='request' tag='DIV' type='' class='q-checkbox__label q-anchor--skip' check:innerText='I accept the Terms and Conditions' /&gt;" Guid="3a7c86d7-86cb-44c2-9f13-769bba889179" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                  <uix:NClick.VerifyOptions>
+                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionOptions.Retry>
+                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                    </uix:VerifyExecutionOptions>
+                                                  </uix:NClick.VerifyOptions>
+                                                </uix:NClick>
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Request Quote'" sap:VirtualizedContainerService.HintSize="954,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                                  <uix:NClick.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvElementArea="315, 1251, 127, 44" CvTextArea="327, 1266, 103, 16" CvTextArgument="Request Quote" CvType="Button" DesignTimeRectangle="317, 1253, 125, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='q-btn q-btn-item non-selectable no-outline q-btn--unelevated q-btn--rectangle bg-orange text-white q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--hal q-btn--md q-btn--orange submit-btn submit-btn' aaname='Request Quote' check:innerText='Request Quote' /&gt;" Guid="3bc2d4db-99df-4bf1-91a0-562d9dde7386" InformativeScreenshot="fe6ac5bf7ffa238b2489cf56eeb77bab.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <uix:Target CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="345, 1201, 231, 14" CvTextArgument="I accept the Terms and Conditions" CvType="Text" DesignTimeRectangle="344, 1200, 231, 18" FullSelectorArgument="&lt;webctrl aaname='I accept the  ' parentid='request' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='I accept the  ' parentid='request' tag='DIV' type='' class='q-checkbox__label q-anchor--skip' check:innerText='I accept the Terms and Conditions' /&gt;" Guid="487e16ae-1390-4231-9f1c-8f6b1741e317" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NClick.Target>
+                                                  <uix:NClick.VerifyOptions>
+                                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                      <uix:VerifyExecutionOptions.Retry>
+                                                        <InArgument x:TypeArguments="x:Boolean" />
+                                                      </uix:VerifyExecutionOptions.Retry>
+                                                      <uix:VerifyExecutionOptions.Timeout>
+                                                        <InArgument x:TypeArguments="x:Double" />
+                                                      </uix:VerifyExecutionOptions.Timeout>
+                                                    </uix:VerifyExecutionOptions>
+                                                  </uix:NClick.VerifyOptions>
+                                                </uix:NClick>
+                                                <Delay DisplayName="Retraso" Duration="00:00:14" sap:VirtualizedContainerService.HintSize="954,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                                <uix:NCheckState DisplayName="Comprobar estado de aplicación" sap:VirtualizedContainerService.HintSize="954,354" sap2010:WorkflowViewState.IdRef="NCheckState_4" Version="V3">
+                                                  <uix:NCheckState.IfExists>
+                                                    <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Sequence>
+                                                  </uix:NCheckState.IfExists>
+                                                  <uix:NCheckState.IfNotExists>
+                                                    <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                    </Sequence>
+                                                  </uix:NCheckState.IfNotExists>
+                                                </uix:NCheckState>
+                                              </Sequence>
+                                            </uix:NCheckState.IfExists>
+                                            <uix:NCheckState.IfNotExists>
+                                              <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </Sequence>
+                                            </uix:NCheckState.IfNotExists>
+                                            <uix:NCheckState.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="348, 506, 61, 18" CvTextArgument="Routing" CvType="Text" DesignTimeRectangle="309, 494, 2151, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div' parentid='request' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='request' tag='DIV' class='row items-center q-col-gutter-sm q-mb-lg' aaname='' check:innerText='Routing' /&gt;" Guid="e8fe5b82-dd2a-4590-913a-dc4cd8060f69" InformativeScreenshot="5472b0d00ce863d596645a0ab85b6c03.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="316, 429, 83, 22" CvTextArgument="Request" CvType="Text" DesignTimeRectangle="293, 401, 2191, 76" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' parentid='request' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='request' tag='DIV' class='q-card__section q-card__section--vert q-card__section--hal q-card__section--headline' aaname='' check:innerText='Request' /&gt;" Guid="943f18a1-4ebe-4b76-b21f-a39883b3aed2" SearchSteps="FuzzySelector, CV" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NCheckState.Target>
+                                          </uix:NCheckState>
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes" CVScreenId="10b9137d-2721-4902-8b62-730e9f9a9260" CvElementArea="16, 196, 99, 37" CvTextArea="48, 208, 41, 14" CvTextArgument="Inicio" CvType="Button" DesignTimeRectangle="34, 188, 71, 56" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl class='second-header__link' shadowhostid='' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl class='second-header__link' shadowhostid='' tag='A' type='' aaname=' Inicio ' check:innerText='Inicio' /&gt;" Guid="106e9233-cc81-40dc-b3c4-cda99cd5de12" InformativeScreenshot="f43e8c816cd14f5f168bc159e3e75f43.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <uix:Target CVScreenId="10b9137d-2721-4902-8b62-730e9f9a9260" CvTextArea="95, 149, 135, 27" CvTextArgument="Hapag-Lloyd" CvType="Text" DesignTimeRectangle="44, 132, 184, 56" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl class='header__logo' shadowhostid='' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl class='header__logo' shadowhostid='' tag='IMG' type='' aaname='' /&gt;" Guid="c751a246-8f0e-4791-a939-854511e25b2b" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NCheckState.Target>
+                                    </uix:NCheckState>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-8, -8, 2576, 1416" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAh4SURBVFhHpdd7UFNnGgbwWBURCAQVtu0/OzudcXVFVEBATdWKLVvkIuEmWAoUtOttqsICIiqKiEQBoV4xut1O1d11lW4RvFTSQ0ggECABkhAIIF4QpXZTt1Pcdbt59j050QoBq+07804YhuT5fe/58p0D70XLi3kQM69mgJlb02+aU9OHObIeeMqMmCM3YI5Ci3n1Gmr1kE+jsptaskhd/WvrW39Z+TDfSnwY05BXzQNQOPVtsIDZsm7qLnjWdsBTrsWculYCNMOnQQn/phoINdfNS9oudy/TVgitH/Vy5cs8Evoy35t8mIfwrvkGXjWDFH6Hwm/Cs+YGZtewgA54yPSYLW+Dp6IVc+ub4KVUYUEzC7iGpW0VWK67iKCuM+qwXsmLT8SPeZTvywyZLeHMP+HFDGJezT0C3OVWT+EelnAO4FHbRgg1AVTwbqiHb5MMC1qqLYDAjnN413AGK3tPDMX158dYI8YuP+Y/Elo55jPfgQXQ+C2rn0fh7AQsq6fRz2KDLa2jn1lAK02hGfOUjfBVsRO4agWcRVh3GQsAAcyr+/PGRvgzj/MJAFo99fcU/i1N4AEB7lsAnjLu2nvIDJbVs8GzZO34nawVs2pZQAvtBRXtAxmE6itY1n4RgfrPCHAC0TcLQeFIGNhhTh5Mt90X/sx/hRRu9mP+bQHMZ/5F/ZCC2Wt/l177afUsoJNCtU+DR/ZseTMhGmgjfonFmgoEaM8juOsEIm4UIe52LpLuZ2HN16lD1tgfy495bKKm8EdWwHfwkpow84tbmFnRS92DGZe6CGCkcP2o4Wx7yFtoLyixsPkKAf6BgHYWUIaIXjFib+UhaSAVawY3YaMpRWKNtqxewoY/Wf30c31w230NLqnlEGRWwjXrCqZkVVFfwtSMcryaX4U3/t48BoD9KjLwbZRiUUsllmvPIMhQhugbuYi9mY3E/i1IubceGx7Em63xFsAQXX94fP4NBFnXwM+4BudsBi67FBDk1sM1rwFT8pSYmleHabkyTNstxbSdl/FqbhWmV2qGAWbLVZhbJ4e/6hIWt/wNAa2fYEVHCUI7xVjVtw0JdzYh+e5a/OF+PDY9iJRQ+A8xBMD0M/1wSL0Kp+214Oc0wnmvBi772yEQ6+B6UIcp1FMLdXArbIPbgRa47a+HW64UbtkVeOMCNw2P2hY6lBQEUGB+fRUWNV/EMs0pBHcUQ2TMQUxvBuJubMYH/Wvx4b14rB+MHuAtqn6kmXn+a0xOk8IhWwnH3Wrw83RwLjDARdwJQWEXXIuMmHLIiKnU00qoDxngXqyD+4EmuOfJ4LajEr+tUtKpKMdcuRReisvwbziPN5s+xTL1MQTr8hBu2I5o4xa835eCpNuJSOmPxYd3ReB5Vzz8H39nI+yzVXDY3QbHvA445XeCX2CE8wEjXA52Q1DUDdfiHkL0YGpJDyE68XppR/evSg0F7kXqdPd9CuVrBdfhwbCA6wSoxALlZ3hTdQpvNR9BiC4XIkMWAbZide9aJN5MRPKtKA4w4y+DmLS9Gfa72jA5Vw+HvE447qPe3zUcUcghBNl1+M2Wz0us2+dpuefVJk4vr4a3/AJ8FefgX/dnLFaVIaBJjOC2TIRqMxFp2Ij3ehKR0LfaAlhzJxw8t+Iu2GW3YlKOHva5Bkzea7AgHKwIpwKCiDmESzoDxyCx0pppUzM+ufrYW3aWAGexsP4kFisPYplKjCBNBkLb0yDSb0CsIQ7x3VFIuiFCys1Q8FwPGjFxpw52u/SYtNsA+z0cYvJIRKaCwgvgFFaabs2zKZ+/Xm33ln0Kv9ojWKQoxJIGMd5pzECgKg0hmnUIb09GlC4e7xkj8b4xBCl9gWbehGwtJhBg4q4O2OV0EKLDgrB/FrFXD8fQIgovAV90PNWaZ1PejCTfR3aKAIcJcABL6vYgoD6NABsQ0pIIUXsCYvTRNAUR4jt/j0RjQDdv/HYC7NATQm+LYC8Ji9hQBccQAoiOgR95ssCaZ1M+X5UMzK85goW1+6n34S1FKpYrUxHYuA4rGhMQpo6HSBOFWH0IYnXvIt4QIOS9sl2H8dm6URGTrAiHiKNwWnmYDQc/+nS3NW9YeUk/FnpLi+k0FcOfyYWwdieWyrciQLEegfUJHKBJBFFLKCI1QYjTBzKWN76SpTONhbBjJ5HVDIeQQlr9cfCjTrEAMz/qtM3DhXe1uNxbWghf6R4sZHZCyGzF0tqNCJAn4526BAQ1rEKoKhwidQgL4MLZGrdNxxACTxDjR04inQ6n0ENwiihjw6n/RJDTA9a3Dyvf6hy1nzTHvECaToBUAqwjwAd4Wx6HoPpwBDeEm8JUoZutf87VuG3aGELABkE9kb4Z9usq4RhWah0/hXMAdhrl1o+wKaF002Yh85FkCZPMBMhWM2/XrpIEyiPGfjYkxBCLGPcsIptD2KXVw3Hlx6MB4Bx5ctT98PKVqc0nBCw9AjExXUUTKIHT6AA4R5QNOYtODB/rc8p1RWGMa9DBUR5QM7Um3ggEB6EzIPww7YETFP50DzwLAAGojw+5hB8rd1l51OaZTxByKEYQXCwRBBeZCAACjDK5TK2Q2jwaYlLKF3AKP0qhEg4xOgAEAAGoj8Al7DAEoaXUJSAACEBdBAKYCTDGfqBLQY2RiPEZLXCMOEaXgb4J7FfxlwHyrWljVKZWYoOgtlt3jaZwhNuMkSziZwF+fA58bnGTMLOQZxH2SRe4S8GeCZESAlD4iwHMBPiJlY8sbk+YRiIsk6AAuilROBvMhTvTfWIMgIkAP+//Q0tx06BzgoVwiPHpLZicdBF8uj8400ScKZR95YKp6fcEGCLAS676eZXJnphahhCmJ6fmhKw22P2xge6WX8Lxo6/gmsr88Fpa9cPXU86PecseXjze/wGADjhbeB2rcwAAAABJRU5ErkJggg==" InformativeScreenshot="d0ca45ab71ee86fb59349c42a3ade1e8.jpg" Selector="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" Title="Login to your user account | Hapag-Lloyd" Url="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" />
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </ui:InterruptibleDoWhile.Body>
+                        <ui:InterruptibleDoWhile.Condition>
+                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="Bandera_Hapag = True" />
+                        </ui:InterruptibleDoWhile.Condition>
+                      </ui:InterruptibleDoWhile>
+                    </Sequence>
+                    <Sequence DisplayName="Maersk" sap:VirtualizedContainerService.HintSize="512,5432" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                    <Sequence DisplayName="Cma Cgm " sap:VirtualizedContainerService.HintSize="512,5432" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                    <Sequence DisplayName="ONE" sap:VirtualizedContainerService.HintSize="512,5432" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                    <Sequence DisplayName="Evergreen" sap:VirtualizedContainerService.HintSize="512,5432" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                    <Sequence DisplayName="MSC" sap:VirtualizedContainerService.HintSize="512,428" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+                        <uix:NApplicationCard.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </ActivityAction>
+                        </uix:NApplicationCard.Body>
+                        <uix:NApplicationCard.TargetApp>
+                          <uix:TargetApp Area="0, 0, 0, 0" />
+                        </uix:NApplicationCard.TargetApp>
+                      </uix:NApplicationCard>
+                    </Sequence>
+                  </Parallel>
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+            <ui:ForEachRow.DataTable>
+              <InArgument x:TypeArguments="sd1:DataTable">
+                <VisualBasicValue x:TypeArguments="sd1:DataTable" ExpressionText="TablaFiltrada">
+                  <VisualBasicValue.Result>
+                    <OutArgument x:TypeArguments="sd1:DataTable" />
+                  </VisualBasicValue.Result>
+                </VisualBasicValue>
+              </InArgument>
+            </ui:ForEachRow.DataTable>
+          </ui:ForEachRow>
+        </Sequence>
+      </ui:InterruptibleDoWhile.Body>
+      <ui:InterruptibleDoWhile.Condition>
+        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="CicloInfinito = true">
+          <VisualBasicValue.Result>
+            <OutArgument x:TypeArguments="x:Boolean" />
+          </VisualBasicValue.Result>
+        </VisualBasicValue>
+      </ui:InterruptibleDoWhile.Condition>
+    </ui:InterruptibleDoWhile>
+  </Sequence>
+</Activity>
