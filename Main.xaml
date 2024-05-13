@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="5329,14026" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="5329,14155" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable1" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugsm="clr-namespace:UiPath.GSuite.Sheets.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -120,7 +120,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Naviera Robot APP" sap:VirtualizedContainerService.HintSize="5339,13961" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Naviera Robot APP" sap:VirtualizedContainerService.HintSize="5339,14090" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="CicloInfinito" />
       <Variable x:TypeArguments="x:String" Name="Usuario_Hapag" />
@@ -180,15 +180,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CicloInfinito = true]" DisplayName="Ciclo Infinito" sap:VirtualizedContainerService.HintSize="5277,13873" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[CicloInfinito = true]" DisplayName="Ciclo Infinito" sap:VirtualizedContainerService.HintSize="5277,14002" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
       <ui:InterruptibleDoWhile.Body>
-        <Sequence DisplayName="Consulta Datos" sap:VirtualizedContainerService.HintSize="5243,13736" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Consulta Datos" sap:VirtualizedContainerService.HintSize="5243,13864" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Naviera DartaBase APP " BrowserItemId="1gz9zVZQu8EjczKWQtrA-necXnOQ7fUidLOarBfQZfA8" ConnectionId="b27b0de1-3252-441c-b30e-23dde0ebc68b" DisplayName="Leer rango" HasHeaders="True" sap:VirtualizedContainerService.HintSize="5181,288" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Solicitud" ReadAs="Values" Result="[ConsultaSheet]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
+          <uga:ReadRangeConnections x:TypeArguments="sd:DataTable1" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeInformation="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" AuthScopesInvalid="False" BrowserItemFriendlyName="Naviera DartaBase APP " BrowserItemId="1gz9zVZQu8EjczKWQtrA-necXnOQ7fUidLOarBfQZfA8" ConnectionId="b27b0de1-3252-441c-b30e-23dde0ebc68b" DisplayName="Leer rango" HasHeaders="True" sap:VirtualizedContainerService.HintSize="5181,290" sap2010:WorkflowViewState.IdRef="ReadRangeConnections`1_1" ItemSelectionMode="Browse" Range="Solicitud" ReadAs="Values" Result="[ConsultaSheet]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False">
             <uga:ReadRangeConnections.ColumnNames>
               <x:Array Type="x:String">
                 <x:String>ID</x:String>
@@ -208,13 +208,13 @@
               <ugsm:RangeMetadataSlim ColumnStart="1" RangeType="Range" />
             </uga:ReadRangeConnections.RangeMetadata>
           </uga:ReadRangeConnections>
-          <Sequence DisplayName="Filtros Trablas" sap:VirtualizedContainerService.HintSize="5181,1462" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence DisplayName="Filtros Trablas" sap:VirtualizedContainerService.HintSize="5181,1476" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:FilterDataTable DataTable="[ConsultaSheet]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[TablaFiltrada]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable DataTable="[ConsultaSheet]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[TablaFiltrada]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -233,7 +233,7 @@
                 </scg:List>
               </ui:FilterDataTable.SelectColumns>
             </ui:FilterDataTable>
-            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[Tabla_Hapag]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[Tabla_Hapag]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -252,7 +252,7 @@
                 </scg:List>
               </ui:FilterDataTable.SelectColumns>
             </ui:FilterDataTable>
-            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[Tabla_Maersk]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[Tabla_Maersk]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -271,7 +271,7 @@
                 </scg:List>
               </ui:FilterDataTable.SelectColumns>
             </ui:FilterDataTable>
-            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[Tabla_Cma]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[Tabla_Cma]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -290,7 +290,7 @@
                 </scg:List>
               </ui:FilterDataTable.SelectColumns>
             </ui:FilterDataTable>
-            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_5" OutputDataTable="[Tabla_ONE]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_5" OutputDataTable="[Tabla_ONE]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -309,7 +309,7 @@
                 </scg:List>
               </ui:FilterDataTable.SelectColumns>
             </ui:FilterDataTable>
-            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,193" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" OutputDataTable="[Tabla_Evergreen]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_6" OutputDataTable="[Tabla_Evergreen]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -328,7 +328,7 @@
                 </scg:List>
               </ui:FilterDataTable.SelectColumns>
             </ui:FilterDataTable>
-            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,184" sap2010:WorkflowViewState.IdRef="FilterDataTable_7" OutputDataTable="[Tabla_MSC]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable DataTable="[TablaFiltrada]" DisplayName="Filtrar tabla de datos" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="388,186" sap2010:WorkflowViewState.IdRef="FilterDataTable_7" OutputDataTable="[Tabla_MSC]" SelectColumnsMode="Remove">
               <ui:FilterDataTable.Filters>
                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                   <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -348,26 +348,26 @@
               </ui:FilterDataTable.SelectColumns>
             </ui:FilterDataTable>
           </Sequence>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TablaFiltrada]" DisplayName="Procesamiento de Consultas por Fila" sap:VirtualizedContainerService.HintSize="5181,11901" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-            <ui:ForEachRow.Body>
-              <ActivityAction x:TypeArguments="sd1:DataRow">
-                <ActivityAction.Argument>
-                  <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="Fila Actual" />
-                </ActivityAction.Argument>
-                <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="5147,11714" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <Parallel DisplayName="Paralelo" sap:VirtualizedContainerService.HintSize="5085,11629" sap2010:WorkflowViewState.IdRef="Parallel_1">
-                    <Sequence DisplayName="Hapag Lloyd" sap:VirtualizedContainerService.HintSize="2431,11559" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Parallel DisplayName="Paralelo" sap:VirtualizedContainerService.HintSize="5181,12013" sap2010:WorkflowViewState.IdRef="Parallel_1">
+            <Sequence DisplayName="Hapag Lloyd" sap:VirtualizedContainerService.HintSize="2527,11943" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Tabla_Hapag]" DisplayName="Para cada fila de la tabla de datos" sap:VirtualizedContainerService.HintSize="2465,11815" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd1:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="FilaActual_Hapag" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="2431,11626" sap2010:WorkflowViewState.IdRef="Sequence_27">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="2369,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="2369,115" sap2010:WorkflowViewState.IdRef="Assign_1">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Boolean">[Bandera_Hapag]</OutArgument>
                         </Assign.To>
@@ -375,35 +375,35 @@
                           <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Bandera_Hapag = True]" DisplayName="Hacer mientras" sap:VirtualizedContainerService.HintSize="2369,11317" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
+                      <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[Bandera_Hapag = True]" DisplayName="Hacer mientras" sap:VirtualizedContainerService.HintSize="2369,11426" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_2">
                         <ui:InterruptibleDoWhile.Body>
-                          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="2335,11180" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="2335,11288" sap2010:WorkflowViewState.IdRef="Sequence_21">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Edge: Login to your user account | Hapag-Lloyd" sap:VirtualizedContainerService.HintSize="2273,11095" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Navegador Edge: Login to your user account | Hapag-Lloyd" sap:VirtualizedContainerService.HintSize="2273,11203" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="2239,10855" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="2239,10962" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Please Log in'" sap:VirtualizedContainerService.HintSize="2177,1251" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                    <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Please Log in'" sap:VirtualizedContainerService.HintSize="2177,1260" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                       <uix:NCheckState.IfExists>
-                                        <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="450,1002" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                        <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="450,1009" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'E-mail Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Usuario_Hapag]" Version="V3">
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'E-mail Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,288" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Usuario_Hapag]" Version="V3">
                                             <uix:NTypeInto.Target>
                                               <uix:TargetAnchorable BrowserURL="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvElementArea="1066, 566, 389, 42" CvType="InputBox" DesignTimeRectangle="1067, 568, 388, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='signInName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='signInName' tag='INPUT' type='text' class='' placeholder='E-mail Address' aaname='               E-mail Address             ' /&gt;" Guid="3bfa14cc-4287-483f-8337-52f579c8fd6e" InformativeScreenshot="aa1bf8d557aabdd856fc33a001d89c65.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
@@ -424,7 +424,7 @@
                                               </uix:VerifyExecutionTypeIntoOptions>
                                             </uix:NTypeInto.VerifyOptions>
                                           </uix:NTypeInto>
-                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="TAEWOONG2021*" Version="V3">
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="TAEWOONG2021*" Version="V3">
                                             <uix:NTypeInto.Target>
                                               <uix:TargetAnchorable BrowserURL="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvElementArea="1066, 648, 390, 42" CvType="InputBox" DesignTimeRectangle="1067, 649, 388, 40" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='' placeholder='Password' aaname='Password' /&gt;" Guid="386bb282-69b9-4ae8-bf43-bf5551d44b55" InformativeScreenshot="c2a1bc7b857a123c18900b0eae1a8697.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
@@ -445,7 +445,7 @@
                                               </uix:VerifyExecutionTypeIntoOptions>
                                             </uix:NTypeInto.VerifyOptions>
                                           </uix:NTypeInto>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Log in'" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Log in'" sap:VirtualizedContainerService.HintSize="388,227" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                             <uix:NClick.Target>
                                               <uix:TargetAnchorable BrowserURL="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" CVScreenId="50fe4f16-b284-4bc4-a3d8-734dc70d800d" CvElementArea="1065, 719, 390, 51" CvTextArea="1235, 736, 50, 20" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="1067, 721, 388, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='next' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='next' tag='BUTTON' type='submit' class='' aaname='Log in' check:innerText='Log in' /&gt;" Guid="1a2809b3-6d43-469c-8cfd-97deb22f041e" InformativeScreenshot="0ce9e5d90b699a4c9d2b5de3cecc2898.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Login to your user account | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
@@ -466,18 +466,18 @@
                                               </uix:VerifyExecutionOptions>
                                             </uix:NClick.VerifyOptions>
                                           </uix:NClick>
-                                          <Delay DisplayName="Retraso" Duration="00:00:15" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                          <Delay DisplayName="Retraso" Duration="00:00:15" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="Delay_1" />
                                         </Sequence>
                                       </uix:NCheckState.IfExists>
                                       <uix:NCheckState.IfNotExists>
-                                        <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                        <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,321" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" Version="V3" />
-                                          <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                                          <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" Version="V3" />
+                                          <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="Delay_8" />
                                         </Sequence>
                                       </uix:NCheckState.IfNotExists>
                                       <uix:NCheckState.Target>
@@ -490,15 +490,15 @@
                                         </uix:TargetAnchorable>
                                       </uix:NCheckState.Target>
                                     </uix:NCheckState>
-                                    <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Inicio'" sap:VirtualizedContainerService.HintSize="2177,9517" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                    <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Inicio'" sap:VirtualizedContainerService.HintSize="2177,9615" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                       <uix:NCheckState.IfExists>
-                                        <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1673,9275" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                        <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1673,9371" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cotizar'" sap:VirtualizedContainerService.HintSize="1611,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cotizar'" sap:VirtualizedContainerService.HintSize="1611,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                             <uix:NClick.Target>
                                               <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes" CVScreenId="0fb29b79-62ea-4ccf-b2b2-3fe1bcefe755" CvTextArea="63, 308, 54, 14" CvTextArgument="Cotizar" CvType="Text" DesignTimeRectangle="12, 292, 256, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aria-role='button' shadowhostid='' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aria-role='button' shadowhostid='' tag='DIV' type='' class='q-item q-item-type row no-wrap q-item--clickable q-link cursor-pointer q-focusable q-hoverable' aaname='' check:innerText='Cotizar' /&gt;" Guid="51699100-a5c7-4657-9c04-c35d0134e5f0" InformativeScreenshot="17e00f5766e8ab242961ed8ab7b9b57b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
@@ -519,7 +519,7 @@
                                               </uix:VerifyExecutionOptions>
                                             </uix:NClick.VerifyOptions>
                                           </uix:NClick>
-                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Nueva Cotización'" sap:VirtualizedContainerService.HintSize="1611,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Nueva Cotización'" sap:VirtualizedContainerService.HintSize="1611,227" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                             <uix:NClick.Target>
                                               <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes" CVScreenId="efcb2fa9-2e3e-4e72-9129-fd47de893c76" CvTextArea="76, 356, 119, 14" CvTextArgument="Nueva Cotizacion" CvType="Text" DesignTimeRectangle="50, 340, 153, 48" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aaname=' Nueva Cotización ' shadowhostid='' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='EXT-BUSINESS-SUITE' /&gt;&lt;webctrl aaname=' Nueva Cotización ' shadowhostid='' tag='SPAN' type='' class='base-menu-items__link-text base-menu-items__link-text--active' check:innerText='Nueva Cotización' /&gt;" Guid="50d9078f-b1f2-4391-9fb0-77892a8f7a7c" InformativeScreenshot="99f373d35e3b2f65e012c4898e2d2030.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
@@ -540,15 +540,15 @@
                                               </uix:VerifyExecutionOptions>
                                             </uix:NClick.VerifyOptions>
                                           </uix:NClick>
-                                          <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Request'" sap:VirtualizedContainerService.HintSize="1611,8735" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                          <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Request'" sap:VirtualizedContainerService.HintSize="1611,8827" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                             <uix:NCheckState.IfExists>
-                                              <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1107,8493" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                              <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="1107,8583" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Start Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1045,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Inicio_Envio_Quemado]" Version="V3">
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Start Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1045,288" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Inicio_Envio_Quemado]" Version="V3">
                                                   <uix:NTypeInto.Target>
                                                     <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="364, 585, 95, 13" CvTextArgument="Start Location" CvType="Text" DesignTimeRectangle="317, 572, 320, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl parentid='request' tabindex='-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='request' tabindex='-1' tag='DIV' type='' class='q-field__control relative-position row no-wrap' aaname='' /&gt;" Guid="cc5ecfaf-b7fc-4081-9e08-e78df8bd8cfe" InformativeScreenshot="7289839452b0e1f4a5acbc0be76e6b4f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                       <uix:TargetAnchorable.Anchors>
@@ -569,8 +569,8 @@
                                                     </uix:VerifyExecutionTypeIntoOptions>
                                                   </uix:NTypeInto.VerifyOptions>
                                                 </uix:NTypeInto>
-                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1045,122" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="1045,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
+                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1045,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="1045,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
                                                   <uix:NKeyboardShortcuts.VerifyOptions>
                                                     <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                                                       <uix:VerifyExecutionOptions.Retry>
@@ -582,7 +582,7 @@
                                                     </uix:VerifyExecutionOptions>
                                                   </uix:NKeyboardShortcuts.VerifyOptions>
                                                 </uix:NKeyboardShortcuts>
-                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'End Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1045,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Entrega_Envio_Quemado]" Version="V3">
+                                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'End Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1045,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Text="[Entrega_Envio_Quemado]" Version="V3">
                                                   <uix:NTypeInto.Target>
                                                     <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvTextArea="700, 585, 87, 13" CvTextArgument="End Location" CvType="Text" DesignTimeRectangle="653, 572, 320, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl idx='2' parentid='request' tabindex='-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='request' tabindex='-1' tag='DIV' class='q-field__control relative-position row no-wrap' aaname='' /&gt;" Guid="23505534-8bf4-44f5-954a-b7b955929870" InformativeScreenshot="cac6cd5b9824945b95763be15611601e.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                       <uix:TargetAnchorable.Anchors>
@@ -603,8 +603,8 @@
                                                     </uix:VerifyExecutionTypeIntoOptions>
                                                   </uix:NTypeInto.VerifyOptions>
                                                 </uix:NTypeInto>
-                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1045,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="1045,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
+                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="1045,123" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Atajos del teclado" sap:VirtualizedContainerService.HintSize="1045,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
                                                   <uix:NKeyboardShortcuts.VerifyOptions>
                                                     <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
                                                       <uix:VerifyExecutionOptions.Retry>
@@ -616,7 +616,7 @@
                                                     </uix:VerifyExecutionOptions>
                                                   </uix:NKeyboardShortcuts.VerifyOptions>
                                                 </uix:NKeyboardShortcuts>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I accept'" sap:VirtualizedContainerService.HintSize="1045,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'I accept'" sap:VirtualizedContainerService.HintSize="1045,227" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                                   <uix:NClick.Target>
                                                     <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvElementArea="315, 1198, 21, 20" CvType="CheckBox" DesignTimeRectangle="319, 1202, 14, 14" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;label&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' parentid='request' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='request' tag='svg' class='q-checkbox__svg fit absolute-full' aaname='' /&gt;" Guid="cd32084a-5318-42a8-ac44-0328053201a8" InformativeScreenshot="433d7280e861ccef97b2022a1c2700ef.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                       <uix:TargetAnchorable.Anchors>
@@ -637,7 +637,7 @@
                                                     </uix:VerifyExecutionOptions>
                                                   </uix:NClick.VerifyOptions>
                                                 </uix:NClick>
-                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Request Quote'" sap:VirtualizedContainerService.HintSize="1045,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Request Quote'" sap:VirtualizedContainerService.HintSize="1045,227" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                                   <uix:NClick.Target>
                                                     <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quick-quotes?language=es" CVScreenId="28a94c1a-a2c9-4914-872b-847f73c41246" CvElementArea="315, 1251, 127, 44" CvTextArea="327, 1266, 103, 16" CvTextArgument="Request Quote" CvType="Button" DesignTimeRectangle="317, 1253, 125, 40" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='q-btn q-btn-item non-selectable no-outline q-btn--unelevated q-btn--rectangle bg-orange text-white q-btn--actionable q-focusable q-hoverable q-btn--no-uppercase q-btn--hal q-btn--md q-btn--orange submit-btn submit-btn' aaname='Request Quote' check:innerText='Request Quote' /&gt;" Guid="3bc2d4db-99df-4bf1-91a0-562d9dde7386" InformativeScreenshot="fe6ac5bf7ffa238b2489cf56eeb77bab.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                       <uix:TargetAnchorable.Anchors>
@@ -658,10 +658,10 @@
                                                     </uix:VerifyExecutionOptions>
                                                   </uix:NClick.VerifyOptions>
                                                 </uix:NClick>
-                                                <Delay DisplayName="Retraso" Duration="00:00:14" sap:VirtualizedContainerService.HintSize="1045,122" sap2010:WorkflowViewState.IdRef="Delay_4" />
-                                                <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Quotation'" sap:VirtualizedContainerService.HintSize="1045,6521" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
+                                                <Delay DisplayName="Retraso" Duration="00:00:14" sap:VirtualizedContainerService.HintSize="1045,123" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                                <uix:NCheckState DisplayName="Comprobar estado de aplicación 'Quotation'" sap:VirtualizedContainerService.HintSize="1045,6596" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V3">
                                                   <uix:NCheckState.IfExists>
-                                                    <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="541,6279" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                                    <Sequence DisplayName="Aparece el destino" sap:VirtualizedContainerService.HintSize="541,6312" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                                       <Sequence.Variables>
                                                         <Variable x:TypeArguments="x:String" Name="LOO_40STH_Hapag" />
                                                         <Variable x:TypeArguments="x:String" Name="LOO_40HC_Hapag" />
@@ -687,7 +687,7 @@
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Quotation number'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_29" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Quotation_Number_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Quotation number'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_29" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Quotation_Number_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="74ea2146-867d-4db0-82de-f69548b12d33" CvTextArea="1774, 465, 124, 13" CvType="AnyWordGroup" DesignTimeRectangle="1776, 462, 208, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='W240500977336' class='hal-data-item__content' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='hal-data-item__content' parentid='app' tag='DIV' type='' /&gt;" Guid="782e33ff-b3dd-4d15-8969-db8388b821eb" ImageBase64="" InformativeScreenshot="4e1449dc3563bc4365332ba20e2b6d4c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -699,7 +699,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Commodity'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_30" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Commodity_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Commodity'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_30" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Commodity_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="e860c494-6a71-43be-8468-8f28c453f65c" CvTextArea="1775, 533, 28, 13" CvType="AnyWordGroup" DesignTimeRectangle="1776, 530, 208, 20" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl class='hal-data-item__content' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='hal-data-item__content' type='' aaname='' parentid='app' tag='DIV' /&gt;" Guid="b9e737e0-ac5c-49f3-b7fc-570a0abe4831" ImageBase64="" InformativeScreenshot="f07a1b25d49daf4dda149187b0646aee.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -711,7 +711,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Valid from'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_31" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Valid_from_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Valid from'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_31" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Valid_from_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="ea05ccd5-3915-47fc-8d1a-5b04f4becbc4" CvTextArea="1775, 601, 84, 13" CvType="AnyWordGroup" DesignTimeRectangle="1776, 598, 92, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='2024-05-12' class='hal-data-item__content' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='hal-data-item__content' parentid='app' tag='DIV' type='' /&gt;" Guid="dc556bad-41c2-4e7e-a597-ba9fa04056bb" ImageBase64="" InformativeScreenshot="337283bfd53588a40c16532b1f88809c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -723,7 +723,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Valid to'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_32" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Valid_To_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Valid to'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_32" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[Valid_To_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="30e3c628-2781-4b80-af59-21c93fa9826c" CvTextArea="1897, 601, 87, 13" CvType="AnyWordGroup" DesignTimeRectangle="1892, 598, 92, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='2024-06-30' class='hal-data-item__content' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='hal-data-item__content' parentid='app' tag='DIV' type='' /&gt;" Guid="ee31313b-0e29-47b0-bf35-77b6a8575145" ImageBase64="" InformativeScreenshot="95fa66b5c7a7d0ca2bd20857d5a30747.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -735,7 +735,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_Curr_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_Curr_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="3a927f02-6e30-4a7e-81bb-f85902d7a5dd" CvTextArea="1477, 872, 26, 12" CvType="AnyWordGroup" DesignTimeRectangle="1477, 871, 25, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="aa509e4e-f844-4513-b8a8-d0b260a6a416" InformativeScreenshot="c637b8f745ff43eff24c308e8395a05e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -747,7 +747,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_20STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_20STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="0f2722d9-a716-4bc6-9921-2f8255eb3f01" CvTextArea="1551, 872, 24, 12" CvType="AnyWordGroup" DesignTimeRectangle="1552, 871, 22, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='220' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="18b84bb0-b1b3-4554-a282-faa93f27e526" InformativeScreenshot="9ae6eed80b7472d2fa1ee5998fec58ad.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -759,7 +759,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_40STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_40STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="0f2722d9-a716-4bc6-9921-2f8255eb3f01" CvTextArea="1626, 872, 21, 12" CvType="AnyWordGroup" DesignTimeRectangle="1626, 871, 21, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='105' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="42f98983-0bf5-4ad5-84d2-9546dc3a5675" InformativeScreenshot="b5c94e27d4f55e60c65f72a1aeec3d81.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -771,7 +771,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_40HC_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[OFS_40HC_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="0f2722d9-a716-4bc6-9921-2f8255eb3f01" CvTextArea="1698, 872, 21, 12" CvType="AnyWordGroup" DesignTimeRectangle="1698, 871, 21, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='105' tableCol='5' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="c0ce3817-a390-45ff-9115-c9ba00759e44" InformativeScreenshot="d3b1479de50d8aed2150347facb02e1d.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -783,7 +783,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_Curr_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_Curr_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1477, 777, 26, 12" CvType="AnyWordGroup" DesignTimeRectangle="1477, 776, 25, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="ac3e7068-42bd-45f2-a6dd-80b675eb9db6" InformativeScreenshot="21c71be762ee1258aec4469c89808ba5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -795,7 +795,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_20STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_20STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1567, 777, 8, 12" CvType="AnyWordGroup" DesignTimeRectangle="1567, 776, 7, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='5' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="693e4fbd-37d2-4a52-a0df-511d4b24c41e" InformativeScreenshot="1398bf80e9763e6d9b70741d3231a08f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -807,7 +807,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_40STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_40STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1633, 777, 14, 12" CvType="AnyWordGroup" DesignTimeRectangle="1633, 776, 14, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='10' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="ccd83f82-790d-4999-8b5f-508c40028845" InformativeScreenshot="f2f30033da7bc7d29ed7e072d977bba9.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -819,7 +819,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_40HC_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TSH_40HC_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1705, 777, 14, 12" CvType="AnyWordGroup" DesignTimeRectangle="1705, 776, 14, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='10' tableCol='5' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="cd23f18d-75df-4650-a464-e077bbcf04bc" ImageBase64="" InformativeScreenshot="51d23e7156326919a1534e118182963f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -831,7 +831,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THC_Curr_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THC_Curr_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1477, 809, 26, 12" CvType="AnyWordGroup" DesignTimeRectangle="1477, 808, 25, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="7a29577c-a6b4-4d13-99a3-a869756fa1f3" InformativeScreenshot="d70b8d9072bbcc2ab02d61fd19ed7b2b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -843,7 +843,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TCH_20STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TCH_20STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1555, 809, 20, 12" CvType="AnyWordGroup" DesignTimeRectangle="1555, 808, 19, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='110' tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="f591bc9c-14ef-46ff-b9ad-027c37cfa7f9" ImageBase64="" InformativeScreenshot="a6970445d55fc6f8a857e5dbc05da471.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -855,7 +855,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TCH_40STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TCH_40STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1627, 809, 20, 12" CvType="AnyWordGroup" DesignTimeRectangle="1628, 808, 19, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='110' tableCol='4' tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="4b6e43b6-2179-43b2-9661-41196f702744" InformativeScreenshot="abc4154ae4c23d4fa7d36459b0c48b4c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -867,7 +867,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TCH_40HC_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[TCH_40HC_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1699, 809, 20, 12" CvType="AnyWordGroup" DesignTimeRectangle="1700, 808, 19, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='110' tableCol='5' tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="7eae83cf-d230-4121-a18c-9051ccf09b47" InformativeScreenshot="577995f901722553984d697bdf8ff386.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -879,7 +879,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_Curr_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_Curr_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1477, 841, 26, 12" CvType="AnyWordGroup" DesignTimeRectangle="1477, 840, 25, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="9000e874-3288-4e90-8b2e-1886b80833ee" InformativeScreenshot="5033afaaac79e71bbe1d3be9bc73431c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -891,7 +891,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_20STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_20STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1558, 841, 17, 12" CvType="AnyWordGroup" DesignTimeRectangle="1559, 840, 15, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='40' tableRow='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="8dc10684-9441-413c-9433-35aa51119f2b" ImageBase64="" InformativeScreenshot="2963f0137684b8c7b29940366f5c678f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -903,7 +903,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_40STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_40STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1631, 841, 16, 12" CvType="AnyWordGroup" DesignTimeRectangle="1631, 840, 16, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='40' tableCol='4' tableRow='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="2efb495f-c3a6-4d96-8305-8253014b578c" ImageBase64="" InformativeScreenshot="2a9939398ca30c376c2f37b932c1ec47.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -915,7 +915,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_40HC_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[LOO_40HC_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="15721593-a62c-4089-a238-05b8160ac0b9" CvTextArea="1703, 841, 16, 12" CvType="AnyWordGroup" DesignTimeRectangle="1703, 840, 16, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='40' tableCol='5' tableRow='4' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Export Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="0741621d-1d4b-4f8e-80c3-6fa071688d9d" ImageBase64="" InformativeScreenshot="31b17400b2257b8ac0eb3031eedcf5a7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -927,7 +927,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Carrier Security Fee'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_Curr_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Carrier Security Fee'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_17" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_Curr_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1477, 941, 26, 12" CvType="AnyWordGroup" DesignTimeRectangle="1477, 940, 25, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="12ad0421-7694-49d0-b33d-22674b7bf20b" ImageBase64="" InformativeScreenshot="3cc543489d5ca0400171663fa43296db.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -939,7 +939,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_20STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_18" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_20STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1561, 941, 14, 12" CvType="AnyWordGroup" DesignTimeRectangle="1561, 940, 13, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='15' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="d8b01329-cf35-4954-a598-dc407ff68259" ImageBase64="" InformativeScreenshot="4abf92b723ee3b52aed2e90cac634e80.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -951,7 +951,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_40STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_19" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_40STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1633, 941, 14, 12" CvType="AnyWordGroup" DesignTimeRectangle="1634, 940, 13, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='15' tableCol='4' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="916f44e9-8b2e-4248-9151-81810de75721" ImageBase64="" InformativeScreenshot="ec77243eac3d04f12d47f09409c1bc08.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -963,7 +963,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_20" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_40HC_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_20" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[CSF_40HC_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1705, 941, 14, 12" CvType="AnyWordGroup" DesignTimeRectangle="1706, 940, 13, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='15' tableCol='5' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="b5751f0a-66cd-4586-811e-2779c127710b" ImageBase64="" InformativeScreenshot="f3d927b6fad8fafdd69ee28e38dd8059.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -975,7 +975,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_21" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_Curr_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_21" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_Curr_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1477, 973, 26, 12" CvType="AnyWordGroup" DesignTimeRectangle="1477, 972, 25, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="d2c874b2-2bbf-4ab0-ab23-47985458f605" ImageBase64="" InformativeScreenshot="d0445596549b8c5060af62490b94cf50.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -987,7 +987,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_20STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_20STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1559, 973, 16, 12" CvType="AnyWordGroup" DesignTimeRectangle="1560, 972, 14, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='76' tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="6a24aa08-7b72-4be7-ae18-870a1549a0b6" ImageBase64="" InformativeScreenshot="796a85ae8b66c7539124a3bb43134066.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -999,7 +999,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_40STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_40STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1626, 973, 21, 12" CvType="AnyWordGroup" DesignTimeRectangle="1626, 972, 21, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='152' tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="4c63b35e-be16-4c67-9e6f-0a6027d6e926" ImageBase64="" InformativeScreenshot="f403bfddb68e2cc3551971b01b173ea3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -1011,7 +1011,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_40HC_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[MFR_40HC_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="7a9873ea-a891-4313-83d9-bafe652bd2ee" CvTextArea="1698, 973, 21, 12" CvType="AnyWordGroup" DesignTimeRectangle="1698, 972, 21, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='152' tableCol='5' tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Freight Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="2fd4792f-ce24-4ad2-9192-65a31da0d94e" ImageBase64="" InformativeScreenshot="5fca1b5de8cba18d2d88542d822c2238.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -1023,7 +1023,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_Curr_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto 'Curr.'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_Curr_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="74ea2146-867d-4db0-82de-f69548b12d33" CvTextArea="1477, 928, 26, 12" CvType="AnyWordGroup" DesignTimeRectangle="1477, 927, 25, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="6c7372b0-9ce2-4e8e-a61d-63e3bea8d61b" ImageBase64="" InformativeScreenshot="11926a127262e1c0575fe406a24133b2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -1035,7 +1035,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_20STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_20STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="74ea2146-867d-4db0-82de-f69548b12d33" CvTextArea="1559, 928, 16, 12" CvType="AnyWordGroup" DesignTimeRectangle="1560, 927, 14, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='75' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="bfd95305-e1b6-4203-8640-7624f834cf9e" ImageBase64="" InformativeScreenshot="1bd2b72ef2d5610772548f6ef4ea37e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -1047,7 +1047,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_27" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_40STH_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '20STD'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_27" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_40STH_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="74ea2146-867d-4db0-82de-f69548b12d33" CvTextArea="1559, 928, 16, 12" CvType="AnyWordGroup" DesignTimeRectangle="1560, 927, 14, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='75' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="7b072ad9-e618-4183-aa75-48876f8b34dc" ImageBase64="" InformativeScreenshot="1bd2b72ef2d5610772548f6ef4ea37e7.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -1059,7 +1059,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_28" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_40HC_Hapag]" Version="V3">
+                                                      <uix:NGetText DisplayName="Obtener texto '40HC'" sap:VirtualizedContainerService.HintSize="479,190" sap2010:WorkflowViewState.IdRef="NGetText_28" ScopeIdentifier="85d66f4e-1f52-4013-88c2-bf6a973c34c5" TextString="[THCD_40HC_Hapag]" Version="V3">
                                                         <uix:NGetText.Target>
                                                           <uix:TargetAnchorable BrowserURL="https://www.hapag-lloyd.com/solutions/new-quote/#/quotation" CVScreenId="74ea2146-867d-4db0-82de-f69548b12d33" CvTextArea="1704, 928, 15, 12" CvType="AnyWordGroup" DesignTimeRectangle="1704, 927, 15, 15" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl aaname='75' tableCol='5' tableRow='2' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Import Surcharges Curr. 20STD 40STD 40HC' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='SPAN' /&gt;" Guid="f08a585f-4c8e-4c3e-b28a-ac46394ccf6b" ImageBase64="" InformativeScreenshot="144e6f1545f9984364244c54e1d231fd.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Quick Quotes Spot | Hapag-Lloyd' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
                                                             <uix:TargetAnchorable.Anchors>
@@ -1071,7 +1071,7 @@
                                                           </uix:TargetAnchorable>
                                                         </uix:NGetText.Target>
                                                       </uix:NGetText>
-                                                      <ui:MultipleAssign DisplayName="Asignación múltiple" sap:VirtualizedContainerService.HintSize="479,141" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                                      <ui:MultipleAssign DisplayName="Asignación múltiple" sap:VirtualizedContainerService.HintSize="479,142" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                                                         <ui:MultipleAssign.AssignOperations>
                                                           <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                                                             <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -1088,14 +1088,14 @@
                                                     </Sequence>
                                                   </uix:NCheckState.IfExists>
                                                   <uix:NCheckState.IfNotExists>
-                                                    <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                    <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,321" sap2010:WorkflowViewState.IdRef="Sequence_25">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
-                                                      <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://www.hapag-lloyd.com/en/home.html" Version="V3" />
-                                                      <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                                                      <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://www.hapag-lloyd.com/en/home.html" Version="V3" />
+                                                      <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="Delay_6" />
                                                     </Sequence>
                                                   </uix:NCheckState.IfNotExists>
                                                   <uix:NCheckState.Target>
@@ -1111,14 +1111,14 @@
                                               </Sequence>
                                             </uix:NCheckState.IfExists>
                                             <uix:NCheckState.IfNotExists>
-                                              <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                              <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,321" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://www.hapag-lloyd.com/en/home.html" Version="V3" />
-                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                                                <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://www.hapag-lloyd.com/en/home.html" Version="V3" />
+                                                <Delay DisplayName="Retraso" Duration="00:00:04" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="Delay_5" />
                                               </Sequence>
                                             </uix:NCheckState.IfNotExists>
                                             <uix:NCheckState.Target>
@@ -1134,14 +1134,14 @@
                                         </Sequence>
                                       </uix:NCheckState.IfExists>
                                       <uix:NCheckState.IfNotExists>
-                                        <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                        <Sequence DisplayName="No aparece el destino" sap:VirtualizedContainerService.HintSize="450,321" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" Version="V3" />
-                                          <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                                          <uix:NGoToUrl DisplayName="Ir a URL" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="https://identity.hapag-lloyd.com/hlagwebprod.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=64d7a44b-1c5b-4b52-9ff9-254f7acd8fc0&amp;scope=openid%20profile%20offline_access&amp;redirect_uri=https%3A%2F%2Fwww.hapag-lloyd.com%2Fsolutions%2Fauth&amp;client-request-id=018f470f-0908-797c-ace3-27e8cb30393a&amp;response_mode=fragment&amp;response_type=code&amp;x-client-SKU=msal.js.browser&amp;x-client-VER=3.9.0&amp;client_info=1&amp;code_challenge=P_zx2xiWgAUcZb-2antxiOvFxHv_WYUlOKoNqEbZGKQ&amp;code_challenge_method=S256&amp;nonce=018f470f-0909-7ab1-af41-978f57ce5b75&amp;state=eyJpZCI6IjAxOGY0NzBmLTA5MDktNzBmYi05ZmU4LTZiM2NiMGNmMTBhMiIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D" Version="V3" />
+                                          <Delay DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="Delay_7" />
                                         </Sequence>
                                       </uix:NCheckState.IfNotExists>
                                       <uix:NCheckState.Target>
@@ -1165,141 +1165,141 @@
                         </ui:InterruptibleDoWhile.Body>
                       </ui:InterruptibleDoWhile>
                     </Sequence>
-                    <Sequence DisplayName="Maersk" sap:VirtualizedContainerService.HintSize="512,11559" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+            <Sequence DisplayName="Maersk" sap:VirtualizedContainerService.HintSize="512,11943" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,303" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_11">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
-                        <uix:NApplicationCard.Body>
-                          <ActivityAction x:TypeArguments="x:Object">
-                            <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                            </ActivityAction.Argument>
-                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </Sequence>
-                          </ActivityAction>
-                        </uix:NApplicationCard.Body>
-                        <uix:NApplicationCard.TargetApp>
-                          <uix:TargetApp Area="0, 0, 0, 0" />
-                        </uix:NApplicationCard.TargetApp>
-                      </uix:NApplicationCard>
                     </Sequence>
-                    <Sequence DisplayName="Cma Cgm " sap:VirtualizedContainerService.HintSize="512,11559" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <Sequence DisplayName="Cma Cgm " sap:VirtualizedContainerService.HintSize="512,11943" sap2010:WorkflowViewState.IdRef="Sequence_7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,303" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_12">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
-                        <uix:NApplicationCard.Body>
-                          <ActivityAction x:TypeArguments="x:Object">
-                            <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                            </ActivityAction.Argument>
-                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </Sequence>
-                          </ActivityAction>
-                        </uix:NApplicationCard.Body>
-                        <uix:NApplicationCard.TargetApp>
-                          <uix:TargetApp Area="0, 0, 0, 0" />
-                        </uix:NApplicationCard.TargetApp>
-                      </uix:NApplicationCard>
                     </Sequence>
-                    <Sequence DisplayName="ONE" sap:VirtualizedContainerService.HintSize="512,11559" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <Sequence DisplayName="ONE" sap:VirtualizedContainerService.HintSize="512,11943" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,303" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_13">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
-                        <uix:NApplicationCard.Body>
-                          <ActivityAction x:TypeArguments="x:Object">
-                            <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                            </ActivityAction.Argument>
-                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </Sequence>
-                          </ActivityAction>
-                        </uix:NApplicationCard.Body>
-                        <uix:NApplicationCard.TargetApp>
-                          <uix:TargetApp Area="0, 0, 0, 0" />
-                        </uix:NApplicationCard.TargetApp>
-                      </uix:NApplicationCard>
                     </Sequence>
-                    <Sequence DisplayName="Evergreen" sap:VirtualizedContainerService.HintSize="512,11559" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <Sequence DisplayName="Evergreen" sap:VirtualizedContainerService.HintSize="512,11629" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,303" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_14">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
-                        <uix:NApplicationCard.Body>
-                          <ActivityAction x:TypeArguments="x:Object">
-                            <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                            </ActivityAction.Argument>
-                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </Sequence>
-                          </ActivityAction>
-                        </uix:NApplicationCard.Body>
-                        <uix:NApplicationCard.TargetApp>
-                          <uix:TargetApp Area="0, 0, 0, 0" />
-                        </uix:NApplicationCard.TargetApp>
-                      </uix:NApplicationCard>
                     </Sequence>
-                    <Sequence DisplayName="MSC" sap:VirtualizedContainerService.HintSize="512,11559" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <Sequence DisplayName="MSC" sap:VirtualizedContainerService.HintSize="512,11629" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,303" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,103" sap2010:WorkflowViewState.IdRef="Sequence_15">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Utilizar Aplicación/Navegador" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="85d66f4e-1f52-4013-88c2-bf6a973c34c5" Version="V2">
-                        <uix:NApplicationCard.Body>
-                          <ActivityAction x:TypeArguments="x:Object">
-                            <ActivityAction.Argument>
-                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                            </ActivityAction.Argument>
-                            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="416,102" sap2010:WorkflowViewState.IdRef="Sequence_15">
-                              <sap:WorkflowViewStateService.ViewState>
-                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                </scg:Dictionary>
-                              </sap:WorkflowViewStateService.ViewState>
-                            </Sequence>
-                          </ActivityAction>
-                        </uix:NApplicationCard.Body>
-                        <uix:NApplicationCard.TargetApp>
-                          <uix:TargetApp Area="0, 0, 0, 0" />
-                        </uix:NApplicationCard.TargetApp>
-                      </uix:NApplicationCard>
                     </Sequence>
-                  </Parallel>
-                </Sequence>
-              </ActivityAction>
-            </ui:ForEachRow.Body>
-          </ui:ForEachRow>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </Parallel>
         </Sequence>
       </ui:InterruptibleDoWhile.Body>
     </ui:InterruptibleDoWhile>
